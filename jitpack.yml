@@ -2,6 +2,8 @@ jdk:
   - oraclejdk8
 before_install:
   - echo "Before installing..."
+  - echo whoami
+  - cat /etc/sudoers
   - sudo apt-get update -qq
   - sudo apt-get --yes install build-essential
   - mkdir protobuf_install
