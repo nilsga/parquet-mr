@@ -1,3 +1,5 @@
 before_install:
   - echo "Before installing..."
+  - sudo apt-get update -qq
+  - sudo apt-get --yes install build-essential
 install: mvn install --batch-mode -DskipTests=true -Dmaven.javadoc.skip=true -Dsource.skip=true
