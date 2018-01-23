@@ -1,5 +1,5 @@
 jdk:
-  - oraclejdk7
+  - oraclejdk8
 before_install:
   - echo "Before installing..."
   - sudo apt-get update -qq
@@ -27,4 +27,4 @@ before_install:
   - ./configure --disable-gen-erl --disable-gen-hs --without-ruby --without-haskell --without-erlang --without-php
   - sudo make install
   - cd ..
-install: mvn install --batch-mode -DskipTests=true -Dmaven.javadoc.skip=true -Dsource.skip=true 
+install: mvn install -X --batch-mode -DskipTests=true -Dmaven.javadoc.skip=true -Dsource.skip=true 
