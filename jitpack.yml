@@ -1,1 +1,3 @@
+before_install:
+  - echo "Before installing..."
 install: mvn install --batch-mode -DskipTests=true -Dmaven.javadoc.skip=true -Dsource.skip=true

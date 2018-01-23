@@ -479,6 +479,7 @@
             <exclude>.gitignore</exclude>
             <exclude>.idea/**</exclude>
             <exclude>*/jdiff/*.xml</exclude>
+	    <exclude>jitpack.yml</exclude>
             <exclude>.travis.yml</exclude>
             <exclude>licenses/**</exclude>
             <exclude>protobuf_install/**</exclude>
