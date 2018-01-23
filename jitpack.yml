@@ -25,6 +25,9 @@ before_install:
   - cd thrift-0.7.0
   - chmod +x ./configure
   - ./configure --disable-gen-erl --disable-gen-hs --without-ruby --without-haskell --without-erlang --without-php
+  - echo "Making install"
   - sudo make install
+  - echo "Installed"
+  - thrift -version
   - cd ..
 install: mvn install -X --batch-mode -DskipTests=true -Dmaven.javadoc.skip=true -Dsource.skip=true 
