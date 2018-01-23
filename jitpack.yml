@@ -1,3 +1,4 @@
+sudo: true
 before_install:
   - echo "Before installing..."
   - apt-get update -qq
